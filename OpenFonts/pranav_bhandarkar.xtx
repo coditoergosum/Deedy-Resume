@@ -149,25 +149,57 @@ Halide \textbullet{} DSLs \\
 
 \section{Experience}
 \runsubsection{Qualcomm}
-\descript{| Sr. Software Engineer }
+\descript{| Sr. Staff Engineer, Manager }
 \location{Feb 2011 - Present | Austin, TX}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item {\bf Lead} a global team of engineers working on the {\bf Halide} compiler. Halide is a domain specific language for computational photography and image processing. Primary focus is the development and maintenance of the {\bf Hexagon Vector eXtensions (HVX)} backend in Halide. HVX is a wide-vector coprocessor to {\bf Qualcomm's Hexagon\textsuperscript{\textregistered} DSP}.
+\item Develop product roadmap in alignment with the hardware roadmap and customer needs.
+\item Supervise execution, both internally and externally in collaboration with the open-source community.
+\item First engineer to start working on the HVX backend in Halide.
+\item Conceptualized and developed a modular testsuite for on-device testing to be used internally with the CI infrastructure at Qualcomm.
+\item Worked with multiple OEM partners to deploy performant software solutions based on Halide on many Android phones running on Qualcomm Snapdragon processors such as {\bf Google Pixel}, {\bf Sony Xperia} and {\bf OnePlus}.
+\item Extensive work on codesize and performance improvements in {\bf LLVM} targeted towards Hexagon\textsuperscript{\texttrademark} and HVX both.
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+  \begin{tightemize}
+    \item For example, \href{https://github.com/llvm-mirror/llvm/blob/master/lib/Target/Hexago
+n/HexagonVectorLoopCarriedReuse.cpp} {\bf reusing loop carried vector values from previous iterations}
+  \end{tightemize}
+\end{tightemize}
+
 \sectionsep
 
 \runsubsection{Qualcomm}
 \descript{| Interim Engineering Intern }
 \location{May 2009 - Dec 2009 | Austin, TX}
-\sectionsep
-
-\runsubsection{Codito Technologies}
-\descript{| Interim Engineering Intern }
-\location{July 2005 – June 2008 | Pune, India}
-\vspace{\topsep} % Hacky fix for awkward extra vertical space
-\begin{tightemize}\item 52 out of 2500 applicants chosen to be a KPCB Fellow 2014.
-\item Led and shipped Yoda - the admin interface for the new Phoenix platform. 
-\item Full-stack developer - Wrote and reviewed code for JS using Backbone, Jade, Stylus and Require and Scala using Play
+\begin{tightemize}
+\item Worked on a project to use the Open64 compiler to guide the Hexagon architecture team as they planned an expansion of the ISA for an upcoming revision of the Hexagon architecture.
+\item Diagnosed a critical 30\% performance slowdown caused by the instruction scheduler in GCC.
 \end{tightemize}
 \sectionsep
 
+\runsubsection{Codito Technologies}
+\descript{| Software Developer }
+\location{July 2005 – June 2008 | Pune, India}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Part of a 2 member GNU Tools team working on developing and maintaining an out-of-tree {\bf GCC backend for the DXP\textsuperscript{\textregistered} VLIW processor} by Icera.
+\item Worked on a number of correctness and performance issues in the backend.
+\end{tightemize}
+\sectionsep
 
-\end{minipage} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     TALKS & PRESENTATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Talks \& Presentations}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item {\bf Halide for Hexagon DSP with Hexagon Vector eXtensions (HVX) using LLVM}​ ​- ​Pranav
+Bhandarkar, Anshuman Dasgupta, Ron Lieberman, Dan Palermo (Qualcomm), Dillon
+Sharlet, Andrew Adams (Google) - LLVM Workshop, CGO 2017, Austin TX, USA.
+\item {\bf Code Size Reduction using Similar Function Merging} - Tobias Edler Von Koch (Univ. of Edinburgh),
+  Pranav Bhandarkar (Qualcomm) - LLVM Developers' Meeting, 2013, San Francisco, CA, USA.
+\end{tightemize}
+\end{minipage}
 \end{document}  \documentclass[]{article}
